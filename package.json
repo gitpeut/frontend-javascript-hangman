@@ -1,15 +1,15 @@
 {
-  "name": "hangman",
+  "name": "frontend-javascript-hangman",
   "version": "1.0.0",
-  "description": "Let's build a game!",
+  "description": "Opdracht waarin je met behulp van een aantal jest-testen ga je een interactief spelletje maken: galgje! De gebruiker kan letters raden en die via de terminal invoeren. Maar let op! Bij zeven foute letters is het game over!",
   "main": "index.js",
   "scripts": {
     "test": "npx jest",
     "test:watch": "npx jest --watch",
     "start": "node index.js"
   },
-  "author": "Rein Op 't Land",
-  "license": "SEE LICENSE.MD",
+  "author": "Rein op 't Land & Nova Eeken",
+  "license": "ISC - NOVI Hogeschool",
   "dependencies": {
     "readline-sync": "^1.4.10"
   },
