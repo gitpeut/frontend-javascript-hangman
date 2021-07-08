@@ -1,15 +1,16 @@
 function displayWordSoFar(word, guesses) {
-  // WRITE ME
+    // WRITE ME
     let output = '';
+    // loop over each character in word
     for (let i = 0; i < word.length; i++) {
-        // if character at position i is guessed display letter + space
+        // if character at position i is guessed display character + space
         // else display underscore + space
-        const letter = `${word.charAt(i)}` ;
+        const letter = `${word.charAt(i)}`;
 
-        if (  guesses.includes( letter )  ){
+        if (guesses.includes(letter)) {
             output += letter + ' ';
-        }else{
-            output +=   '_ ';
+        } else {
+            output += '_ ';
         }
 
     }
@@ -18,13 +19,14 @@ function displayWordSoFar(word, guesses) {
 }
 
 function isGameWon(word, guesses) {
-  // WRITE ME
+    // WRITE ME
+    // loop over each character in word
     for (let i = 0; i < word.length; i++) {
         // if a character in word is not in guesses,
-        // then retturn false
-        const letter = `${word.charAt(i)}` ;
+        // then return false
+        const letter = `${word.charAt(i)}`;
 
-        if ( !guesses.includes( letter )  ){
+        if (!guesses.includes(letter)) {
             return false;
         }
 
@@ -33,8 +35,8 @@ function isGameWon(word, guesses) {
     return true;
 }
 
-function displayGallow( wrongcount ) {
-
+function displayGallow(wrongcount) {
+    // display parts of the gallow depending on wrongcount
     switch (wrongcount) {
         case 1:
             console.log("|\n|\n|\n|\n|\n==========");
@@ -67,28 +69,29 @@ function displayGallow( wrongcount ) {
 
 
 function isGameLost(word, guesses) {
-  // WRITE ME
-    let wrongCount= 0;
+    // WRITE ME
+    let wrongCount = 0;
 
+    // loop over the guesses array
     for (let i = 0; i < guesses.length; i++) {
         // if a character in guesses is not in word, add 1 to wrongCount
-        if ( !word.includes( guesses[i] ) ) {
+        if (!word.includes(guesses[i])) {
             wrongCount++;
             //if wrongCount >= 7 game is lost
-            if (wrongCount >= 7){
-                displayGallow( wrongCount );
+            if (wrongCount >= 7) {
+                displayGallow(wrongCount);
                 return true;
             }
         }
     }
-    displayGallow(  wrongCount );
+    displayGallow(wrongCount);
 
     // if we get here, game is not lost (yet)
     return false;
 }
 
 module.exports = {
-  displayWordSoFar: displayWordSoFar,
-  isGameWon: isGameWon,
-  isGameLost: isGameLost,
+    displayWordSoFar: displayWordSoFar,
+    isGameWon: isGameWon,
+    isGameLost: isGameLost,
 };

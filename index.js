@@ -9,11 +9,13 @@ function game(word, guesses) {
     let letter = '';
     // ask for a letter, if empty, ask again.
     do {
-        console.log( '\n' + displayWordSoFar(word, guesses));
+        console.log('\n' + displayWordSoFar(word, guesses));
         letter = question("Raad een letter: ");
     } while (!letter.length);
 
-    // make sure all letters are lowercase
+    // make sure all letters are lowercase and
+    // only the first letter is used.
+
     letter = letter.charAt(0).toLowerCase();
 
     // voeg de geraden letter toe aan de array met guesses
