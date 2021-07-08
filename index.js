@@ -46,4 +46,11 @@ __________
 ===========  ░╚═════╝░╚═╝░░╚═╝╚══════╝░╚═════╝░░╚════╝░╚══════╝
 `);
 
-game("javascript", []);
+
+const words = [ "javascript","bloemkool", "fietsband","politicus","pannenset","contrabas","nachtmerrie","winterweer","cementmmixer"]
+
+const whatIndex = Math.floor( Math.random() * (words.length - 1) );
+const whatWord  = words[ whatIndex ];
+
+
+game( whatWord, [] );
