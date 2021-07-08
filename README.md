@@ -42,8 +42,9 @@ Wanneer je `npm run start` of de `jest --watch` mode hebt aangezet, zal deze bli
 3. Lees de code goed door. Zet ter verduidelijking commentaar bij de al aanwezige uitdrukkingen of codegebruik (wat doen deze stukjes code?)
 
 ### Game logica implementeren
-1. Implementeer de game-logica stap voor stap en laat je helpen door de tests! Gebruik het test-commando `npm run test:watch`. Het werkt het beste om te werken met een stappenplan. Je mag hiervoor het stappenplan op de branch `stappenplan` (in `gamelogic.js`) gebruiken, maar het is uitdagender om je eigen stappenplan te schrijven!
-2. Is dit helemaal gelukt? Ga dan verder met de functies in `index.js` en voeg de volgende functionaliteit toe:
+1. Implementeer de game-logica stap voor stap door je te laten helpen door de tests! Dit doe je door het test-commando `npm run test:watch` te gebruiken en te kijken hoe je de tests kunt laten slagen. 
+2. Het werkt het beste om te werken met een stappenplan. Je mag hiervoor het stappenplan op de branch `stappenplan` (in `gamelogic.js`) gebruiken, maar het is uitdagender om je eigen stappenplan te schrijven!
+3. Is dit helemaal gelukt? Ga dan verder met de functies in `index.js` en voeg de volgende functionaliteit toe:
 * Zorg dat de gebruiker letters kan raden
 * Houdt in de `guesses`-array bij welke letters de gebruiker geraden heeft
 * Laat zien welke letters al geraden zijn (met `displayWordSoFar`)
