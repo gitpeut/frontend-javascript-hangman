@@ -60,8 +60,7 @@ function displayGallow(wrongcount) {
         case 7: // legs
             console.log("__________\n| /      |\n|/      _O_\n|        O\n|       / \\\n|\n==========");
             break;
-        //case 0:
-        default: // flower
+        default: // flower if nothing is wrong.
             console.log("   \\ | /\n   --O--\n   / | \\\n     |\n   0 | 0\n..........");
             break;
     }
