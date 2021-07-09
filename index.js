@@ -49,6 +49,7 @@ __________
 
 const words = [ "javascript","bloemkool", "fietsband","politicus","pannenset","contrabas","nachtmerrie","winterweer","cementmmixer"]
 
+// randomly select one of the words
 const whatIndex = Math.floor( Math.random() * (words.length - 1) );
 const whatWord  = words[ whatIndex ];
 
