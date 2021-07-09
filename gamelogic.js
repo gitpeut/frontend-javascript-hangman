@@ -5,7 +5,8 @@ function displayWordSoFar(word, guesses) {
     for (let i = 0; i < word.length; i++) {
         // if character at position i is guessed display character + space
         // else display underscore + space
-        const letter = `${word.charAt(i)}`;
+
+        const letter = word.charAt(i);
 
         if (guesses.includes(letter)) {
             output += letter + ' ';
@@ -24,9 +25,9 @@ function isGameWon(word, guesses) {
     for (let i = 0; i < word.length; i++) {
         // if a character in word is not in guesses,
         // then return false
-        const letter = `${word.charAt(i)}`;
+        const letter = word.charAt(i);
 
-        if (!guesses.includes(letter)) {
+        if ( !guesses.includes(letter) ) {
             return false;
         }
 
