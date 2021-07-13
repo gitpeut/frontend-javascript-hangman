@@ -1,4 +1,4 @@
-const { displayWordSoFar, isGameWon, isGameLost } = require("./gamelogic");
+const { displayWordSoFar, isGameWon, isGameLost } = require("../gamelogic");
 
 test("displayWordSoFar should display an underscore followed by a space for each letter to guess", () => {
   // ARRANGE
@@ -71,3 +71,4 @@ test("isGameLost should return false if you've guessed less than 7 wrong letters
   // ASSERT
   expect(gameLost).toBe(false);
 });
+
